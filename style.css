@@ -86,13 +86,17 @@ a{
     .header_top__end{
         flex: 1;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: start;
         max-height: 100vh;
         min-height: 70px;
     }
 
+    .header_top__end:first-child{
+        margin-bottom: 7vh;
+    }
+
     .header_top__center{
-        flex: 4;
+        flex: 1;
         flex-direction: column;
         justify-content: space-evenly;
         max-height: 100vh;
