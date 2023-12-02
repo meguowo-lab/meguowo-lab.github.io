@@ -21,6 +21,7 @@ a{
     background-color: #264653;
     position: relative;
     width: 100%;
+    min-width: 140px;
 }
 
 .header_top__start{
@@ -81,7 +82,7 @@ a{
     }
 
     .open{
-        height: 70vh;
+        height: 70lvh;
         padding-bottom: var(--header-h);
     }
 
