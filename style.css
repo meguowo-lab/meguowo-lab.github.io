@@ -54,7 +54,6 @@ a{
 
     .center-end-wraper{
         position: absolute;
-        justify-content: space-evenly;
         top:var(--header-h);
         flex-direction: column;
         height: 0vh;
