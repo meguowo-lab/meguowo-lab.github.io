@@ -19,9 +19,11 @@ a{
     align-items: center;
     height: var(--header-h);
     background-color: #264653;
-    position: relative;
+    position: fixed;
     width: 100%;
     min-width: 140px;
+    min-height: 50px;
+    z-index: 1;
 }
 
 .header_top__start{
@@ -49,6 +51,102 @@ a{
 
 .menu-toggle-div{
     display: none;
+}
+
+.lenta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top:var(--header-h);
+    width: 100%;
+}
+
+.blog-card{
+    position: relative;
+    width: 60%;
+    height: max-content;
+    margin: 2vh 0 2vh 0;
+    background-color: #e76f51;
+    border-radius: 20px;
+    min-height: 300px;
+    min-width: 180px;
+    right: 50%;
+    transition: right 1s;
+}
+
+.show-post{
+    right: 0%;
+}
+
+.card-head{
+    display: flex;
+    height: 10%;
+    min-height: 50px;
+    padding: 5vh 5vw 1vw 5vw;
+    background-color: #e9c46a;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-head img{
+    position: relative;
+    border-radius: 100px;
+    height: 100%;
+    min-height: 64px;
+    image-rendering: pixelated;
+}
+
+footer{
+    position: relative;
+    top:var(--header-h);
+}
+
+.card-info{
+    font-size: 1.3rem;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw 0 5vw;
+    max-height: 50vh;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+.card-content *{
+    flex: 1;
+}
+
+.card-content img{
+    image-rendering: pixelated;
+    object-fit: contain;
+    object-position: top;
+    max-height: 70%;
+    max-width: 69%;
+}
+
+.card-content p{
+    font-size: 1.6rem;
+}
+
+.card-foot{
+    background-color: #e9c46a;
+    height: 5%;
+    border-radius: 0px 0px 20px 20px;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+.like-pressed{
+    fill:#e23636;
+}
+
+svg rect{
+    transition: fill 0.06s;
+}
+
+svg{
+    min-width: 32px;
 }
 
 @media screen and (max-width:900px){
@@ -158,5 +256,17 @@ a{
 
     .sign-up-button{
         padding: 8px;
+    }
+
+    .card-info{
+        font-size: 1rem;
+    }
+
+    .card-head img{
+        min-height: 48px;
+    }
+
+    .card-content p{
+        font-size: 1rem;
     }
 }
