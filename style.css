@@ -63,6 +63,7 @@ a{
         padding-bottom:0vh;
         transition: height 0.4s, padding-bottom 0.4s;
         max-height: 100vh;
+        min-width: 140px;
     }
 
     .menu-toggle-div{
