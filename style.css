@@ -91,8 +91,8 @@ a{
         min-height: 70px;
     }
 
-    .header_top__end:first-child{
-        padding-bottom: 7vh;
+    .header_top__end a:first-child{
+        margin-bottom: 4vh;
     }
 
     .header_top__center{
