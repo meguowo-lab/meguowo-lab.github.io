@@ -152,6 +152,10 @@ svg{
     min-width: 32px;
 }
 
+.abc{
+    margin-left: 5vw;
+}
+
 @media screen and (max-width:900px){
 
     .center-end-wraper{
@@ -229,6 +233,10 @@ svg{
 
     input:checked + .menu-toggle{
         transform: translateY(-2px);
+    }
+
+    .abc{
+        margin-left: 0vw;
     }
 }
 
