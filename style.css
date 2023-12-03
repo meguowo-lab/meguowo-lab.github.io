@@ -112,6 +112,9 @@ footer{
     max-height: 50vh;
     overflow-y: scroll;
     overflow-wrap: break-word;
+    align-items: center;
+    object-fit: fill;
+    overflow-x: hidden;
 }
 
 .card-content *{
@@ -122,8 +125,8 @@ footer{
     image-rendering: pixelated;
     object-fit: contain;
     object-position: top;
-    max-height: 70%;
-    max-width: 69%;
+    width: 50vw;
+    height: 50vh;
 }
 
 .card-content p{
@@ -273,4 +276,8 @@ svg{
 
 .test{
     padding: 50vh;
+}
+
+label:has(.like-btn:checked) svg rect{
+    fill: #e23636;
 }
